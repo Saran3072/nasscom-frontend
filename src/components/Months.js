@@ -13,7 +13,7 @@ function Months() {
   var location = urln.pop()
   function APIcall(month) {
     console.log(location)
-    var backend_URL = `http://localhost:8000/Districts/Predictions/${option.toUpperCase()}/${location}/${month}`
+    var backend_URL = `https://heatwave-and-aqi-predictor-backend.onrender.com/${option.toUpperCase()}/${location}/${month}`
     axios.get(backend_URL,)
 
     .then(function (response) {
